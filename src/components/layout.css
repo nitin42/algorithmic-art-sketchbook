@@ -1,0 +1,16 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.listItems {
+  list-style-type: disc;
+  width: 250px;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+}
