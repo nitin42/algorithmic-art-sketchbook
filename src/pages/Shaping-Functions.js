@@ -8,6 +8,6 @@ export default () => (
     <div id="content" style={{ textAlign: "justify" }}>
       <ShapingFunction />
     </div>
-    <NextLink to="Shaping-Functions" />
+    <NextLink to="Shapes" />
   </div>
 )

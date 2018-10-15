@@ -8,7 +8,6 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`
     },
     'gatsby-plugin-offline',
-    'gatsby-mdx',
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -16,6 +15,27 @@ module.exports = {
           'gatsby-remark-prismjs'
         ],
       },
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+        {
+          resolve: "gatsby-remark-images",
+          options: {
+            maxWidth: 1035,
+            sizeByPixelDensity: true
+          }
+        }
+        ]
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/pages`
+      }
     },
   ],
 }
