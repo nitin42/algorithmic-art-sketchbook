@@ -1,0 +1,17 @@
+# Shaping Functions
+
+**Shaping Functions** are the mathematical functions used in crafting the shapes, for example - plotting a line using [linear interpolation]().
+Application of these functions includes animating shapes, developing envelopes for music or controlling the flow of values in shaders.
+
+### Example
+
+Given below is a visualisation of a mathematical function called **Impulse curve**
+
+```glsl
+float impulse( float k, float x ) {
+  float h = k*x;
+  return h*exp(1.0-h);
+}
+```
+
+![impulse-curve](https://ucadc0d0e3f32f83f39c813ec11b.previews.dropboxusercontent.com/p/orig/AAMDgumi7Ad9b_HCvcaBLbtW4KCvIz4-t-RLYLWFHCN-w22Gzkm1pjDiYAuyK09RwIqST4xmM2v4tAD7WbApoezb5e2cJL9gSa_yZSp3XbNYPRyf_6EIF6wC5O4k4vdg4GcfWuN6cSk-tox4qySbW187BjsOt_uqx4mt-EbXawn-2ebVq3qj6zOc_t2Xq8YGNyZKq7CstMuDSNjKZZvu_vmi/p.gif?size=1600x1200&size_mode=3)

@@ -8,6 +8,14 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`
     },
     'gatsby-plugin-offline',
-    'gatsby-mdx'
+    'gatsby-mdx',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          'gatsby-remark-prismjs'
+        ],
+      },
+    },
   ],
 }

@@ -6,6 +6,7 @@ import Typography from 'typography'
 import githubTheme from 'typography-theme-github'
 
 import './layout.css'
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 
 const typography = new Typography(githubTheme)
 
@@ -32,6 +33,10 @@ const Layout = ({ children }) => (
         </Helmet>
         <div className="center" style={{ marginTop: 10, flexDirection: "column" }}>
           <h2>{data.site.siteMetadata.title}</h2>
+          <div>
+            by{' '}
+            <a href="https://nitin-tulswani.surge.sh/" style={{ fontWeight: "bold", color: 'inherit' }}>Nitin Tulswani</a>
+          </div>
           <div style={{ marginTop: 20 }}>
           {children}
         </div>
