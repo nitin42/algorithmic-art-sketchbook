@@ -19,8 +19,32 @@ li {
   width: 50%;
 }
 
+#next-section {
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
 @media only screen and (max-width: 480px) {
   #content {
     width: 100%;
+  }
+
+  #next-section {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #shaping-curves {
+    width: 250px;
+    height: 250px;
   }
 }
