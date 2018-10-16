@@ -28,6 +28,13 @@ img {
   height: 300px;
 }
 
+canvas {
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
+  -moz-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
+  box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
+}
+
 @media only screen and (max-width: 480px) {
   #content {
     width: 100%;

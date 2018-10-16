@@ -5128,6 +5128,12 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
+glslCanvas@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.npmjs.org/glslCanvas/-/glslCanvas-0.1.7.tgz#a56e64d196f23302aa18ee5dd90ada54f0afbb19"
+  dependencies:
+    xhr "^2.5.0"
+
 good-listener@^1.2.2:
   version "1.2.2"
   resolved "https://registry.npmjs.org/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
@@ -8855,6 +8861,12 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
+react-shader-canvas@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/react-shader-canvas/-/react-shader-canvas-1.0.0.tgz#0963baac88bda2b84c92441c9c1dcae2a297f4bc"
+  dependencies:
+    glslCanvas "^0.1.7"
+
 react-side-effect@^1.1.0:
   version "1.1.5"
   resolved "https://registry.npmjs.org/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"
@@ -11371,7 +11383,7 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
 
-xhr@^2.0.1:
+xhr@^2.0.1, xhr@^2.5.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/xhr/-/xhr-2.5.0.tgz#bed8d1676d5ca36108667692b74b316c496e49dd"
   dependencies:

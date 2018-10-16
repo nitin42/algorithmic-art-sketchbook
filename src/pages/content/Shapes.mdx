@@ -1,0 +1,49 @@
+import { PolarShapes, MixedShapes } from '../shaders'
+
+# Shapes
+
+## Polar shapes
+
+Polar shapes are crafted by computing the angle and radius of each pixel. To create interesting shapes based on
+the angle, I decided to use [Inigo Quilez's Power Curve Function](http://www.iquilezles.org/www/articles/functions/functions.htm).
+It changes the radius in such a way that, one side of the shape is skewed. Hence producing leaves and other interesting shapes.
+
+```glsl
+float pcurve(float x, float a, float b) {
+  float r2 = pow(a, a) * pow(b, b);
+  float r1 = pow(a + b, a + b);
+  float k = r1 / r2;
+  return k * pow(x, a) * pow(1.0 - x, b);
+}
+```
+
+<div className="center">
+  <PolarShapes id="star" />
+</div>
+
+<br/>
+Let's change the no of sides in the above shader to create another interesting shape.
+<br/>
+<br/>
+
+<div className="center">
+  <PolarShapes id="leaves" useStarShape />
+</div>
+
+## Mixed shapes
+
+[Andrew Baldwin's blog](https://thndl.com/square-shaped-shaders.html) has an interesting article on constructing the distance
+field using the polar coordinates. It involves computing the angle of each point of the pixel using `atan()`.
+
+Extending his example, I thought about computing the radius in a different manner. By remapping the `0..1` interval into `0..1` i.e **parabola shaping function**,
+we can create mixed shapes.
+
+```glsl
+float parabola(float x, float k) {
+  return pow(4.0 * x * (1.0 - x), k);
+}
+```
+
+<div className="center">
+  <MixedShapes id="mixed-shape" />
+</div>
