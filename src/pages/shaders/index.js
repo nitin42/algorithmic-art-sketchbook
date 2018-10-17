@@ -1,5 +1,3 @@
-import React from "react";
-
 import { createShaderCanvas } from "react-shader-canvas";
 
 const polarShapeShader = props => `
