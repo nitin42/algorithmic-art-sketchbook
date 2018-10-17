@@ -32,11 +32,11 @@ Let's change the no of sides in the above shader to create another interesting s
 
 ## Mixed shapes
 
-[Andrew Baldwin's blog](https://thndl.com/square-shaped-shaders.html) has an interesting article on constructing the distance
-field using the polar coordinates. It involves computing the angle of each point of the pixel using `atan()`.
+[Andrew Baldwin's blog](https://thndl.com/square-shaped-shaders.html) wrote an interesting article on constructing the distance
+field using the polar coordinates. It involves computing the angle at each pixel point using the built-in function `atan()`.
 
-Extending his example, I thought about computing the radius in a different manner. By remapping the `0..1` interval into `0..1` i.e **parabola shaping function**,
-we can create mixed shapes.
+Extending his example, I thought about computing the radius in a different manner by using the **parabola shaping function**. Use the parabola function, we
+can remap 0..1 interval into 0..1 to create mixed shapes.
 
 ```glsl
 float parabola(float x, float k) {
@@ -50,10 +50,10 @@ float parabola(float x, float k) {
 
 <br/>
 
-The above shader combines a **circle**, **square**, **heptagon** and **triangle** to create a mixed shape art.
+The above shader combines a **circle**, **square**, **heptagon** and **triangle** to create a mixed shape animation.
 
 ## Resources
 
-* [Andrew Baldwin's Blog](https://thndl.com/square-shaped-shaders.html) - You can learn more about creating shaped shaders on his blog. [@baldand](https://twitter.com/baldand)
+* [Andrew Baldwin's Blog](https://thndl.com/square-shaped-shaders.html) - You can learn more about creating interesting shapes using shaders on his blog.
 
 * [The Book of Shaders](https://thebookofshaders.com/07/) - Chapter-7 of the book has some interesting bits about distance field and polar coordinates which you can use to create interesting shapes.
