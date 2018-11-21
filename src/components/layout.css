@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Marker;
+  src: url(../fonts/PermanentMarker.ttf);
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../fonts/SourceSansPro-Light.otf);
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -5,18 +15,46 @@
   text-align: justify;
 }
 
+.heading {
+  font-family: Marker;
+  font-size: 8em;
+  background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  font-family: SourceSansPro;
+  font-size: 1.3em;
+  word-spacing: 1.5px;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+}
+
 .listItems {
   list-style-type: disc;
   width: 250px;
 }
 
-li {
-  padding: 5px;
-  margin: 5px;
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 #content {
-  width: 50%;
+  width: 70%;
+  text-align: justify;
+}
+
+#explore-link {
+  font-family: Marker;
+  font-size: 2em;
+  background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #next-section {
@@ -36,8 +74,17 @@ canvas {
 }
 
 @media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 3em;
+  }
+
+  .intro {
+    font-size: 1em;
+  }
+
   #content {
-    width: 100%;
+    width: 90%;
+    text-align: justify;
   }
 
   #next-section {

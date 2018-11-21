@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Algorithmic Art Sketchbook',
+    title: 'Shader World',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
