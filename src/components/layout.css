@@ -80,10 +80,30 @@ img {
 }
 
 canvas {
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
   -moz-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
   box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
+}
+
+#shader-name {
+  font-size: 4em;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: Marker;
+  font-weight: 100;
+  background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shader-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: center;
 }
 
 @media only screen and (max-width: 480px) {

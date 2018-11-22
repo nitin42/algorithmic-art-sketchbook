@@ -10,7 +10,7 @@ export default function Introduction(props) {
       <div className="intro" id="content" style={{ marginTop: -20 }}>
         <Intro />
         <div className="center">
-        <a href="" id="explore-link">Explore &rarr;</a>
+        <a href="./TruchetTiles" id="explore-link">Explore &rarr;</a>
         </div>
       </div>
       <Footer />
