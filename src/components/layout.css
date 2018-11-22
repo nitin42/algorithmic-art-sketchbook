@@ -15,6 +15,19 @@
   text-align: justify;
 }
 
+.link {
+  font-size: 1.2em;
+  font-weight: 200;
+  align-self: flex-end;
+  margin-right: 15%;
+  font-style: italic;
+  color: #6c6c6c;
+}
+
+.link > a:hover {
+  border-bottom: 2px solid #6c6c6c;
+}
+
 .heading {
   font-family: Marker;
   font-size: 8em;
@@ -100,5 +113,10 @@ canvas {
   #shaping-curves {
     width: 250px;
     height: 250px;
+  }
+
+  .link {
+    font-size: 1em;
+    margin-right: 5%;
   }
 }
