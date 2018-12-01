@@ -42,11 +42,11 @@ export default function RandomnessCircles(props) {
         <h1 id="shader-name">RANDOMNESS</h1>
       </div>
       <div style={{ marginTop: '20%', }}>
-        <Randomness id="randomness" width="600" height="600" random={Math.random() * 20000.0} />
+        <Randomness id="randomness" random={Math.random() * 20000.0} />
       </div>
     </div>
     <div className="center" style={{ marginTop: 50 }}>
-      <a href="./TilesArcs" id="explore-link">Tiles & Arcs &rarr;</a>
+      <a href="./NoiseGain" id="explore-link">Noise & Gain Curve &rarr;</a>
     </div>
     </div>
   )

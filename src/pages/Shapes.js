@@ -53,7 +53,7 @@ export default function Shapes(props) {
         <h1 id="shader-name">Mixed Shapes</h1>
       </div>
       <div style={{ marginTop: '20%', }}>
-        <MixedShapes id="mixed-shapes" width="600" height="600" />
+        <MixedShapes id="mixed-shapes" />
       </div>
     </div>
     </div>

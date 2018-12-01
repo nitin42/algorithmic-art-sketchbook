@@ -80,7 +80,9 @@ img {
 }
 
 canvas {
-  border-radius: 10px;
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
   -webkit-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
   -moz-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
   box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
@@ -88,7 +90,7 @@ canvas {
 
 #shader-name {
   font-size: 4em;
-  word-spacing: 2px;
+  word-spacing: -2px;
   letter-spacing: 2px;
   padding: 10px;
   margin-left: 10px;
@@ -102,7 +104,7 @@ canvas {
 
 .shader-grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, minmax(600px, 2fr));
   justify-items: center;
 }
 
@@ -138,5 +140,20 @@ canvas {
   .link {
     font-size: 1em;
     margin-right: 5%;
+  }
+
+  .shader-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+  }
+
+  canvas {
+    width: 300px;
+    height: 300px;
+  }
+
+  #shader-name {
+    font-size: 2em;
   }
 }

@@ -74,7 +74,7 @@ export default function TruchetTiles(props) {
         <h1 id="shader-name">Truchet Tiles</h1>
       </div>
       <div style={{ marginTop: '20%', }}>
-        <TileDesign id="tiles" width="600" height="600" />
+        <TileDesign id="tiles" />
       </div>
     </div>
     <div className="center" style={{ marginTop: 50 }}>

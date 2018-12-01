@@ -73,7 +73,7 @@ export default function NoiseGainCurve(props) {
         <h1 id="shader-name">Noise & Gain Curve</h1>
       </div>
       <div style={{ marginTop: '20%', }}>
-        <NoiseGainShader id="noise-gain" width="600" height="600" maxField/>
+        <NoiseGainShader id="noise-gain" maxField/>
       </div>
     </div>
     <div className="center" style={{ marginTop: 50 }}>
