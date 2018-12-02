@@ -1,5 +1,5 @@
 import React from 'react'
-import { createShaderCanvas } from "react-shader-canvas";
+import { createShaderCanvas } from 'react-shader-canvas'
 
 const tileShader = props => `
 #ifdef GL_ES
@@ -25,7 +25,7 @@ vec2 tile (vec2 _st, float _zoom) {
     return fract(_st);
 }
 
-vec3 colorA = vec3(sin(u_time), cos(u_time), 0.85);
+vec3 colorA = vec3(sin(u_time * 0.001), cos(u_time), 0.85);
 vec3 colorB = vec3(tan(u_time), sin(u_time), 0.35);
 
 vec2 rotateTilePattern(vec2 _st){
@@ -41,10 +41,10 @@ vec2 rotateTilePattern(vec2 _st){
   // Rotate each cell according to the index
   if(index == 1.0){
     //  Rotate cell 1 by 90 degrees
-    _st = rotate2D(_st,PI*${props.timeSync ? "u_time/4.0" : "0.5"});
+    _st = rotate2D(_st,PI*${props.timeSync ? 'u_time/4.0' : '0.5'});
   } else if(index == 2.0){
     //  Rotate cell 2 by -90 degrees
-    _st = rotate2D(_st,PI*-${props.timeSync ? "u_time/2.0" : "0.5"});
+    _st = rotate2D(_st,PI*-${props.timeSync ? 'u_time/2.0' : '0.5'});
   } else if(index == 3.0){
     //  Rotate cell 3 by 180 degrees
     _st = rotate2D(_st,PI);
@@ -62,24 +62,24 @@ void main (void) {
 
   gl_FragColor = vec4(vec3(mix(colorA, colorB, step(st.x - st.y + 2., st.x + st.y + .1))),1.0);
 }
-`;
+`
 
-const TileDesign = createShaderCanvas(tileShader);
+const TileDesign = createShaderCanvas(tileShader)
 
 export default function TruchetTiles(props) {
   return (
-    <div>
     <div className="shader-grid-container">
       <div>
         <h1 id="shader-name">Truchet Tiles</h1>
       </div>
-      <div style={{ marginTop: '20%', }}>
+      <div>
         <TileDesign id="tiles" />
       </div>
-    </div>
-    <div className="center" style={{ marginTop: 50 }}>
-      <a href="./RandomnessCircles" id="explore-link">Randomness &rarr;</a>
-    </div>
+      <div className="center" style={{ marginTop: 50 }}>
+        <a href="./NoiseGain" id="explore-link">
+          Noise & Gain curve &rarr;
+        </a>
+      </div>
     </div>
   )
 }

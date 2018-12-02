@@ -1,5 +1,5 @@
 import React from 'react'
-import { createShaderCanvas } from "react-shader-canvas";
+import { createShaderCanvas } from 'react-shader-canvas'
 
 const noiseGainShader = props => `
 #ifdef GL_ES
@@ -60,25 +60,25 @@ color -= smoothstep(.35,.4, gain(noise(st*10.), 1.5)); // Holes on splatter
     
     gl_FragColor = vec4(mix(colorA, colorB, 1.-color),1.0);
 }
-`;
+`
 
-const NoiseGainShader = createShaderCanvas(noiseGainShader);
+const NoiseGainShader = createShaderCanvas(noiseGainShader)
 
 // Add a toggle button for switching off max field vector
 export default function NoiseGainCurve(props) {
   return (
-    <div>
     <div className="shader-grid-container">
       <div>
         <h1 id="shader-name">Noise & Gain Curve</h1>
       </div>
-      <div style={{ marginTop: '20%', }}>
-        <NoiseGainShader id="noise-gain" maxField/>
+      <div>
+        <NoiseGainShader id="noise-gain" maxField />
       </div>
-    </div>
-    <div className="center" style={{ marginTop: 50 }}>
-      <a href="./NoiseShape" id="explore-link">Noise & Shapes &rarr;</a>
-    </div>
+      <div className="center" style={{ marginTop: 50 }}>
+        <a href="./NoiseShape" id="explore-link">
+          Noise & Shapes &rarr;
+        </a>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { createShaderCanvas } from "react-shader-canvas";
+import { createShaderCanvas } from 'react-shader-canvas'
 
 const mixedShapeShader = props => `
 #ifdef GL_ES
@@ -41,22 +41,19 @@ void main(){
 
   gl_FragColor = vec4(color,1.0);
 }
-`;
+`
 
-const MixedShapes = createShaderCanvas(mixedShapeShader);
+const MixedShapes = createShaderCanvas(mixedShapeShader)
 
 export default function Shapes(props) {
   return (
-    <div>
     <div className="shader-grid-container">
       <div>
         <h1 id="shader-name">Mixed Shapes</h1>
       </div>
-      <div style={{ marginTop: '20%', }}>
+      <div>
         <MixedShapes id="mixed-shapes" />
       </div>
     </div>
-    </div>
-  
   )
 }

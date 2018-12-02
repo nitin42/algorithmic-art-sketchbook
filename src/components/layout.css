@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Marker;
-  src: url(../fonts/PermanentMarker.ttf);
+  font-family: Cinzel;
+  src: url(../fonts/Cinzel-Bold.otf);
 }
 
 @font-face {
@@ -29,7 +29,7 @@
 }
 
 .heading {
-  font-family: Marker;
+  font-family: Cinzel;
   font-size: 8em;
   background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
   background-clip: text;
@@ -62,8 +62,8 @@ a {
 }
 
 #explore-link {
-  font-family: Marker;
-  font-size: 2em;
+  font-family: Cinzel;
+  font-size: 1.5em;
   background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -80,8 +80,8 @@ img {
 }
 
 canvas {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   border-radius: 5px;
   -webkit-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
   -moz-box-shadow: 3px 6px 9px 0px rgba(199,197,199,1);
@@ -89,12 +89,12 @@ canvas {
 }
 
 #shader-name {
-  font-size: 4em;
+  font-size: 3em;
   word-spacing: -2px;
   letter-spacing: 2px;
   padding: 10px;
   margin-left: 10px;
-  font-family: Marker;
+  font-family: Cinzel;
   font-weight: 100;
   background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
   background-clip: text;
@@ -103,14 +103,15 @@ canvas {
 }
 
 .shader-grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(600px, 2fr));
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (max-width: 480px) {
   .heading {
-    font-size: 3em;
+    font-size: 2.2em;
   }
 
   .intro {

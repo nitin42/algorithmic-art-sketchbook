@@ -1,5 +1,5 @@
 import React from 'react'
-import { createShaderCanvas } from "react-shader-canvas";
+import { createShaderCanvas } from 'react-shader-canvas'
 
 const noiseShape = props => `
 // Author @patriciogv - 2015
@@ -81,26 +81,25 @@ void main() {
 
   gl_FragColor = vec4(color,1.0);
 }
-`;
+`
 
-
-const NoiseShape = createShaderCanvas(noiseShape);
+const NoiseShape = createShaderCanvas(noiseShape)
 
 // Add a toggle button for switching off max field vector
 export default function NoiseGainShape(props) {
   return (
-    <div>
     <div className="shader-grid-container">
       <div>
         <h1 id="shader-name">Noise & Shapes</h1>
       </div>
-      <div style={{ marginTop: '20%', }}>
+      <div>
         <NoiseShape id="noise-shape" />
       </div>
-    </div>
-    <div className="center" style={{ marginTop: 50 }}>
-      <a href="./Shapes" id="explore-link">Mixed shapes &rarr;</a>
-    </div>
+      <div className="center" style={{ marginTop: 50 }}>
+        <a href="./Shapes" id="explore-link">
+          Mixed shapes &rarr;
+        </a>
+      </div>
     </div>
   )
 }
