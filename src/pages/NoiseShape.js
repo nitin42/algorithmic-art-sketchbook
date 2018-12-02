@@ -95,11 +95,6 @@ export default function NoiseGainShape(props) {
       <div>
         <NoiseShape id="noise-shape" />
       </div>
-      <div className="center" style={{ marginTop: 50 }}>
-        <a href="./Shapes" id="explore-link">
-          Mixed shapes &rarr;
-        </a>
-      </div>
     </div>
   )
 }

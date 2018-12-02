@@ -74,11 +74,6 @@ export default function NoiseGainCurve(props) {
       <div>
         <NoiseGainShader id="noise-gain" maxField />
       </div>
-      <div className="center" style={{ marginTop: 50 }}>
-        <a href="./NoiseShape" id="explore-link">
-          Noise & Shapes &rarr;
-        </a>
-      </div>
     </div>
   )
 }

@@ -75,11 +75,6 @@ export default function TruchetTiles(props) {
       <div>
         <TileDesign id="tiles" />
       </div>
-      <div className="center" style={{ marginTop: 50 }}>
-        <a href="./NoiseGain" id="explore-link">
-          Noise & Gain curve &rarr;
-        </a>
-      </div>
     </div>
   )
 }

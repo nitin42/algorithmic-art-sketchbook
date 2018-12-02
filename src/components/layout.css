@@ -16,10 +16,10 @@
 }
 
 .link {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 200;
-  align-self: flex-end;
-  margin-right: 15%;
+  margin-top: 50px;
+  align-self: center;
   font-style: italic;
   color: #6c6c6c;
 }
@@ -39,10 +39,16 @@
 
 .intro {
   font-family: SourceSansPro;
-  font-size: 1.3em;
-  word-spacing: 1.5px;
+  font-size: 1.5em;
+  word-spacing: 1px;
   letter-spacing: 0.8px;
-  line-height: 1.4;
+  font-style: italic;
+  text-align-last: center;
+}
+
+.intro > p {
+  font-weight: 100;
+  color: grey;
 }
 
 .listItems {
@@ -92,12 +98,10 @@ canvas {
   font-size: 3em;
   padding: 10px;
   margin-left: 10px;
-  font-family: Cinzel;
-  font-weight: 100;
-  background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: SourceSansPro;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #4f4f4f;
 }
 
 .shader-grid-container {
@@ -109,7 +113,7 @@ canvas {
 
 @media only screen and (max-width: 480px) {
   .heading {
-    font-size: 2.2em;
+    font-size: 2.8em;
   }
 
   .intro {
