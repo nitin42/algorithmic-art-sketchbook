@@ -13,8 +13,8 @@ uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
 
-vec3 colorA = vec3(sin(u_time * 0.25), cos(u_time * 0.65), 0.25);
-vec3 colorB = vec3(tan(u_time * 0.65), sin(u_time * 0.35), 0.48);
+vec3 colorA = vec3(sin(u_time * 0.25), cos(u_time * 0.65), 0.25 + u_time);
+vec3 colorB = vec3(u_time * 0.65 + 0.85, sin(u_time * 0.35), 0.48 * u_time + 0.48);
 
 float parabola( float x, float k ) {
   return pow(4.0 * x * (1.0-x), k);
