@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Footer from './Footer'
-
 export default function Introduction(props) {
   return (
     <div className="center" style={{ flexDirection: 'column'}}>

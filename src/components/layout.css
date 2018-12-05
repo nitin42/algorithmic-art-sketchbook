@@ -51,11 +51,6 @@
   color: grey;
 }
 
-.listItems {
-  list-style-type: disc;
-  width: 250px;
-}
-
 a {
   display: inline-block;
   text-decoration: none;
@@ -65,19 +60,6 @@ a {
 #content {
   width: 70%;
   text-align: justify;
-}
-
-#explore-link {
-  font-family: Cinzel;
-  font-size: 1.5em;
-  background: linear-gradient(to right, rgb(221, 175, 115) 0%, rgb(221, 175, 115) 20%, rgb(206, 37, 138) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#next-section {
-  letter-spacing: 0.5px;
 }
 
 img {
@@ -123,21 +105,6 @@ canvas {
   #content {
     width: 90%;
     text-align: justify;
-  }
-
-  #next-section {
-    font-size: 15px;
-    letter-spacing: 0.5px;
-  }
-
-  img {
-    width: 250px;
-    height: 250px;
-  }
-
-  #shaping-curves {
-    width: 250px;
-    height: 250px;
   }
 
   .link {
